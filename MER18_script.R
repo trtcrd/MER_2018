@@ -5,7 +5,7 @@
 # environment variables
 
 # set path to the folder containing script and data
-setwd("/Users/tristan/hubiC/01_recherche_ME/01_papers/MER_2018/submitted/ms/_review/Rscripts/")
+setwd("/path/to/the/folder")
 
 # library dependencies
 library(ranger)
