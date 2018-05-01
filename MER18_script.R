@@ -27,8 +27,10 @@ source("sml_compo.R")
 source("plot_ml.R")
 source("bar_plot.R")
 
-##### import data V9 ## check it good, seems not to work
-table <- "data/OTUtable_bactV3V4_sup100.txt"
+##### importing data 
+# here we have to run the script for each OTU table
+# note that the bacterial dataset has already been filtered, so does not need to be abundance filterd 
+table <- "data/OTUtable_euksV1V2.txt"
 
 comp <- read.table("data/metadata.txt", header=TRUE, sep="\t", dec=",")
 otu <- read.table(table, header=TRUE, sep="\t", row.names=1)
@@ -72,7 +74,7 @@ otu  <- subset(otu, rsums >= seq_depth_cutoff)
 comp <- subset(comp, rsums >= seq_depth_cutoff)
 
 ### Removing rares OTUs -- 100 for all markers but 1000 for V9 -- bacteria were already filtered!
-otu <- otu[,colSums(otu)>1000]
+otu <- otu[,colSums(otu)>100]
 taxo <- taxo[,colnames(otu)]
 
 ### CSS normalization of the OTU table
