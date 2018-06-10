@@ -7,7 +7,7 @@
 # set path to the folder containing script and data
 setwd("/path/to/the/folder")
 
-# library dependencies
+# library dependencies (to install with install.packages() command)
 library(ranger)
 library(vegan)
 library(irr)
@@ -16,10 +16,7 @@ library(metagenomeSeq)
 ## for parralel computation --> set the amount of cores available
 library(doMC)
 registerDoMC(cores = 8)
-
 # for biotic indices calculation
-library(devtools)
-install_github("trtcrd/BBI")
 library(BBI)
 
 # function dependencies
