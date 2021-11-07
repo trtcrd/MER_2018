@@ -5,3 +5,5 @@ Cordier T, Forster D, Dufresne Y, Martins CIM, Stoeck T, Pawlowski J. Supervised
 
 The OTU tables of the five markers are zipped in the data.zip archive, along with the metadata.
 Tested on macOS, but should work on linux or windows, as the plots are done using the pdf library.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1286477.svg)](https://doi.org/10.5281/zenodo.1286477)
